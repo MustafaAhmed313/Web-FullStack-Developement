@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form 1</title>
+        <meta charset = "UTF-8"/>
+    </head>
+    <body>
+        <form action = "test.py" method = "post">
+            <div class = "field1">
+                <label>Username</label>
+                <br/>
+                <input type = "text" name = "User" required placeholder = "Username"/>
+            </div>
+            <hr/>
+            <div>
+                <label>Password</label>
+                <br/>
+                <input type = "password" name = "Pass" placeholder = "Write complex pass!"/>
+            </div>
+            <hr/>
+            <div>
+                <label>Mobile</label>
+                <br/>
+                <input type = "text" name = "Mobile" placeholder = "Mobile_Number"/>
+            </div>
+            <hr/>
+            <div>
+                <label>Email</label>
+                <br/>
+                <input type = "email" name = "Mail" required placeholder = "Write a valid mail!"/>
+            </div>
+            <hr/>
+            <div>
+                <label>Subject</label>
+                <br/>
+                <input type = "text" name = "Subject" placeholder = "Subject"/>
+            </div>
+            <input type = "hidden" value = "01032498789"/>
+            <hr/>
+            <input type = "reset" value = "Empty Form"/>
+            <input type = "submit" value = "Send Data"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form 2</title>
+        <meta charset = "UTF-8"/>
+    </head>
+    <body>
+        <form method = "get">
+            <div>
+                <label for = "">Username</label>
+                <br/>
+                <input type = "text" name = "User" autofocus minlength = "5" maxlength = "20" required/>
+            </div>
+            <br/>
+            <div>
+                <label for = "">Email</label>
+                <br/>
+                <input type = "email" name = "Mail" readonly value = "o@o.com"/>
+            </div>
+            <hr/>
+            <div>
+                <h2>Skills</h2>
+                <input type = "checkbox" value = "PS" id = "ps" selected/>
+                <label for = "ps">Problem Solving</label>
+                <input type = "checkbox" value = "LT" id = "lt"/>
+                <label for = "lt">Logical Thinking</label>
+                <input type = "checkbox" value = "AS" id = "as"/>
+                <label for = "as">Advanced Search</label>
+                <input type = "checkbox" value = "A" id = "a"/>
+                <label for = "a">Analysis</label>
+                <input type = "checkbox" value = "P" id = "p"/>
+                <label for = "p">Planning</label>
+            </div>
+            <hr/>
+            <div>
+                <h2>Job</h2>
+                <input type = "radio" value = "FED" id = "fe" selected/>
+                <label for = "fe">Front-End Developer</label>
+                <input type = "radio" value = "BED" id = "be"/>
+                <label for = "be">Back-End Developer</label>
+                <input type = "radio" value = "BA" id = "ba"/>
+                <label for = "ba">Businuss Analyst</label>
+                <input type = "radio" value = "PM" id = "pm"/>
+                <label for = "pm">Project Manager</label>
+                <br/>
+                <input type = "radio" value = "SM" id = "sm"/>
+                <label for = "sm">Scrum Master</label>
+            </div>
+            <hr/>
+            <div>
+                <label for = "pl">Choose Book: </label>
+                <select name = "Pragramming Language" id = "pl">
+                    <optgroup label = "PHP">
+                        <option value = "PHP v5.0">v5.0</option>
+                        <option value = "PHP v7.0">v7.0</option>
+                        <option value = "PHP v8.0">v8.0</option>
+                    </optgroup>
+                    <optgroup label = "Python" id = "py">
+                        <option value = "Python v2.0">v2.0</option>
+                        <option value = "Python v3.0">v3.0</option>
+                        <option value = "Python v3.9">v3.9</option>
+                    </optgroup>
+                </select>
+            </div>
+            <hr/>
+            <div>
+                <textarea name = "brief" id = "" cols = "30" rows = "10" placeholder = "Write Here Why You Want To Learn Programming"></textarea>
+            </div>
+            <input type = "hidden" name = "Token" value = "b92f1fc2fce391ad7af633723afd3055"/>
+            <input type = "reset" value = "Empty"/>
+            <input type = "submit" value = "Send"/>
+        </form>
+    </body>
+</html>
