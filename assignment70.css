@@ -1,0 +1,40 @@
+div {
+    background-color: #eee;
+    padding: 10px;
+    margin: 15px;
+    position: relative; 
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 10px solid #eee;
+    top: 0;
+    left: 0;
+}
+
+.right::after {
+    top: calc(19.29px / 2);
+    left: 100%;
+    border-color: transparent transparent transparent #eee;
+}
+
+.left::after {
+    top: calc(19.29px / 2);
+    left: -19px;
+    border-color: transparent  #eee transparent transparent;
+}
+
+.bottom::after {
+    top: 100%;
+    left: 50%;
+    border-color: #eee transparent transparent transparent;
+}
+
+.top::after {
+    top: -20px;
+    left: 50%;
+    border-color: transparent transparent #eee transparent;
+}
