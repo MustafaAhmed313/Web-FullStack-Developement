@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 123px auto;
+    padding: 10px;
+    background-color: #eee;
+    border-top-left-radius: 6px 19px;
+    border-bottom-right-radius: 6px 19px;
+    border-bottom-left-radius: 49px;
+    border-top-right-radius: 49px;
+    -webkit-box-shadow: inset 0px 0px 8px 0px black;
+}

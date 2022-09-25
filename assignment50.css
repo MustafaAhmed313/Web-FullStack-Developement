@@ -1,0 +1,47 @@
+/* #009688 */
+
+:root {
+    --myColor: #009688;
+    --txtColor: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 150px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: var(--myColor);
+    color: var(--txtColor);
+    font-family: serif;
+    text-align: center;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    background-color: var(--myColor);
+    width: 100%;
+    height: 100%;
+    background-color: var(--myColor);
+    position: absolute;
+    top: 0;
+    left: -9px;
+    transform: skewX(15deg);
+    z-index: -1;
+}
+
+h1::after {
+    content: "";
+    background-color: var(--myColor);
+    width: 10%;
+    height: 100%;
+    background-color: var(--myColor);
+    position: absolute;
+    top: 0;
+    left: -29px;
+    transform: skewX(15deg);
+    z-index: -1;
+}

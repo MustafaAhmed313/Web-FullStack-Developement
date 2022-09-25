@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    counter-increment: my-counter;
+    margin: 15px 30px;
+    padding: 36px 15px;
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    border: 3px solid black;
+    -webkit-box-shadow: 5px 5px 0 0 #359cef , -5px -5px 0 0 #ef4666;
+    position: relative;
+}
+
+div::after {
+    position: absolute;
+    content: counter(my-counter);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    top: -12px;
+    left: 37px;
+
+}

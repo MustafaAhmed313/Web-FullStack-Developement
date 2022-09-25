@@ -1,0 +1,43 @@
+.main-ul {
+    padding-left: 0%;
+    margin: 150px;
+    width: 400px;
+}
+
+.main-ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: #EEE;
+}
+
+.ol-1, .ol-2 {
+    padding-left: 30px;
+    list-style-position: outside;
+}
+
+.ul-1 li, .ol-2 li, .ol-1 li {
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+
+.ul-1 {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+.list-item {
+    list-style-type: none;    
+}
+
+.ol-1 {
+    list-style-type: decimal;
+}
+
+.ol-2 {
+    list-style-type: upper-roman;
+}
+
+
+

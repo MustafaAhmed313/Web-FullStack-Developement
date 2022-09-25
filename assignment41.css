@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    width: inherit;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+}
+
+header {
+    grid-area: "hd";
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 1;
+    background-color: #03a9f4;
+}
+
+header, section, aside, footer {
+    position: relative;
+}
+
+section { 
+    grid-column: 1 / span 8;
+    grid-row: 2 / span 1;
+    background-color: #ff5722;
+}
+
+aside {
+    grid-column: 9 / span 2;
+    grid-row: 2 / span 1;
+    background-color: #607d8b;
+}
+
+footer {
+    grid-column: 1 / span 10;
+    grid-row: 3 / span 1;
+    background-color: #009688;
+}
+
+header::before {
+    content: "Header";
+    color: white;
+    position: absolute;
+}
+
+section::before {
+    content: "Section";
+    color: white;
+    position: absolute;
+}
+
+aside::before {
+    content: "Aside";
+    color: white;
+    position: absolute;
+}
+
+footer::before {
+    content: "Footer";
+    color: white;
+    position: absolute;
+}
+
+header::before, footer::before,
+aside::before, section::before {
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+}

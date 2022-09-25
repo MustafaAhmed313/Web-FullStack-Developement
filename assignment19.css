@@ -1,0 +1,56 @@
+span {
+    background-color: dodgerblue;
+    color: white;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+div {
+    width: 400px;
+    margin: 90px;
+    padding: 20px;
+    border-color: rgb(237, 69, 8) dodgerblue;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #EEE;
+    line-height: 1.8;
+}
+
+
+.top-left {
+    position: absolute;
+    top: 79px;
+    right: 1055px;
+    border-right-color: rgb(237, 69, 8);
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+
+.top-right {
+    position: absolute;
+    top: 79px;
+    right: 614px;
+    border-left-color: rgb(237, 69, 8);
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+
+.bottom-right {
+    position: absolute;
+    top: 235px;
+    right: 614px;
+    border-left-color: rgb(237, 69, 8);
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+
+.bottom-left {
+    position: absolute;
+    top: 235px;
+    right: 1055px;
+    border-right-color: rgb(237, 69, 8);
+    border-right-style: solid;
+    border-right-width: 2px;
+}

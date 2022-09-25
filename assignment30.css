@@ -1,0 +1,23 @@
+div {
+    width: 400px;
+    margin: auto;
+    background-color: #eee !important;
+    color: #eee !important;
+    border: none !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+div::before {
+    margin: inherit;
+    background-color: inherit;
+    color: black;
+    font-size: inherit;
+    content: "Elzero";
+    text-align: inherit;
+    width: inherit;
+    position: absolute;
+    padding: inherit;
+    top: 20px;
+    left: 40px;
+}

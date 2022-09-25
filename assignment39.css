@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 100%;
+    position: relative;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    caret-color: #f44336;
+    background-color: #eee;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(
+        to right,
+        #f44336 50%,
+        #009688 50%
+    );
+    top: 43px;
+    left: 10px;
+}

@@ -1,0 +1,50 @@
+
+caption {
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    border-bottom: 3px solid rgb(21, 180, 137);
+    font-family: 'Cairo', sans-serif;
+}
+
+table td {
+    margin: 10px;
+    padding: 10px;
+    background-color: #EEE;
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+table thead td {
+    background-color: rgb(43, 41, 41);
+    color: white;
+}
+
+.view, .delete {
+    color: white;
+    width: 43px;
+    font-size: small;
+    position: relative;
+    cursor: pointer;
+}
+
+.view {
+    background-color: deepskyblue;
+    top: 15px;
+}
+
+.delete {
+    background-color: crimson;
+    left: 50px;
+    bottom: 9px; 
+}

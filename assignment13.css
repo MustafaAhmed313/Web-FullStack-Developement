@@ -1,0 +1,23 @@
+.div-1 {
+    padding: 10px;
+    margin:10px;
+    border: 5px solid rgb(238, 84, 45);
+}
+
+.div-2 {
+    padding: 10px;
+    margin:10px;
+    border: 5px solid rgb(24, 149, 105);
+}
+
+.div-2 p,
+.div-1 p {
+    padding: inherit;
+    margin: inherit;
+    border: inherit;
+}
+
+p {
+    text-align: center;
+    background-color: rgb(194, 193, 193);
+}

@@ -1,0 +1,35 @@
+p {
+    background-color: rgb(179, 175, 175);
+    text-align: center;
+    margin: 7.5px
+}
+
+.p-third {
+    overflow: hidden;
+    float: left;
+    width: calc((100% - (4 * 15px)) / 3);
+}
+
+.p-full {
+    width: calc((100% - (2 * 15px)) / 1);
+}
+
+.p-half {
+    overflow: hidden;
+    float: left;
+    width: calc((100% - (3 * 15px)) / 2);
+}
+
+.p-quarter {
+    overflow: hidden;
+    float: left;
+    width: calc((100% - (5 * 15px)) / 4);
+}
+
+div {
+    width: 1000px;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -7px 0px 0 #1e88e5 , 7px 0px 0 #f4511e;
+    color: #f4511e;
+    font-weight: bold;
+    background-color: #eee;
+}

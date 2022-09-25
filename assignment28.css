@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "cairo";
+    font-weight: 400;
+}
+
+.parent {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width: 550px;
+}
+
+.right-side , .left-side{
+    width: 200px;
+    float: left;
+    text-align: center;
+    margin: 25px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.right-side::after {
+    content: "";
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    height: 245.6px;
+    background-color: #339dfb;
+    position: absolute;
+    left: 260px;
+    top: 34px;
+}
+
+.left-side::before{
+    content: "Or";
+    background-color: #339dfb;
+    color: white;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    left: 246px;
+    top: 146px;
+}
+
+.right-side div , .left-side div {
+    padding: 2px;
+    margin: 10px;
+}
+
+.right-side .price-1 , .left-side .price-2 {
+    background-color: rgb(222, 222, 222);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 2px auto;
+    font-size: 20pt;
+    padding-top: 60px;
+}
+
+.title-1 , .title-2 {
+    background-color: #339dfb;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+

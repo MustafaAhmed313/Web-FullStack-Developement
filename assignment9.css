@@ -1,0 +1,7 @@
+div {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 0.5px 0.5px 0 rgb(240, 146, 58), 1px 1px 0 rgb(83, 106, 241), 1.5px 1.5px 0 rgb(178, 66, 58);
+}

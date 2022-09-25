@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pageColor: rgb(224, 223, 223);
+    --pagePadding: 10px;
+    --pageMargin: 5px;
+}
+
+div {
+    display: flex;
+}
+
+
+ul {
+    background-color: var(--pageColor);
+    margin: var(--pageMargin);
+    padding: var(--pagePadding);
+    width: calc(827% / 2);
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+.page {
+    padding: var(--pagePadding);
+    margin: var(--pageMargin);
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.logo {
+    background-color: var(--pageColor);
+    justify-content: center;
+}
+
+.header, .main-area, .footer {
+    width: 100%;
+}
+
+.header {
+    height: 60%;
+}
+
+.header div, .main-area div, .footer div {
+    width: calc(100% / 2);
+    background-color: var(--pageColor);
+    margin: var(--pageMargin);
+    padding: var(--pagePadding);
+}
+
+.main-area {
+    width: 100%;
+    height: 600%;
+}
+
+.main-area .content {
+    width: 155%;
+}
+
+.footer {
+    height: 60%;
+}
+
+.footer .design {
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 0;
+}
+
+.footer .copyright {
+    align-items: center;
+    margin-right: 0;
+}
+
+
+

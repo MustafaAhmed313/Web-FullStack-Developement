@@ -1,0 +1,63 @@
+
+div {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+    background-color: #eee;
+    border-left: 10px solid #f44336;
+    border-right: 10px solid #673ab7;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: serif;
+}
+
+div::first-letter {
+    color: #f44336;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 10px;
+    top: 0;
+    left: -10px;
+    background-image: linear-gradient(
+        to right,
+        #f44336 20%,
+        #2196f3 20%,
+        #2196f3 40%,
+        #4caf50 40%,
+        #4caf50 60%,
+        #e91e63 60%,
+        #e91e63 80%,
+        #673ab7 80%);  
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 10px;
+    top: 49px;
+    left: -10px;
+    background-image: linear-gradient(
+        to right,
+        #f44336 20%,
+        #2196f3 20%,
+        #2196f3 40%,
+        #4caf50 40%,
+        #4caf50 60%,
+        #e91e63 60%,
+        #e91e63 80%,
+        #673ab7 80%);  
+}
+
+/*
+#f44336 orange
+#2196f3 lightblue
+#4caf50 lightgreen
+#4caf50 darkred
+#673ab7 violet
+*/
