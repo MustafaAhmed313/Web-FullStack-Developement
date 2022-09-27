@@ -1,0 +1,245 @@
+h1 { 
+    /*
+        indecates to an element 
+        specially all elements with same Type
+    */
+    color: brown;
+    font-size: 40px;
+    background-image: url("../../d140ee99255082f1e892d7fa1457fc8a.jpg");
+    background-repeat: repeat; /*default value for background repeat*/
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: auto;
+    border-width: 10px;
+    border-color: lightgreen;
+    border-style: solid;
+    text-shadow: 5px 0 0 rgb(3, 3, 0);
+}
+.paragraph1{ /*(.) indecates to a class*/
+    color: darksalmon;
+    font-size: 35px;
+    background-color: cadetblue;
+    padding: 10px 20px 15px 5px;
+    margin: 10px 20px 15px 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+#paragraph1{ /*(#) indecates to an id*/
+    color: forestgreen;
+    font-size: 35px;
+    background-color: coral;
+}
+
+/* Grouping methodolgy */
+.span-1,
+.span-2,
+.span-3 {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    border: 5px solid rgb(189, 72, 72);
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: darkviolet;
+}
+
+/* Nesting Methodology */
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+div div p span {
+    padding: 10px;
+    margin: 5px;
+    background-color: #EEE;
+    border: 5px solid rgb(76, 76, 193);
+    border-radius: 10%;
+}
+
+/* Overflow Concept */
+.overflow-1 {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(244, 211, 130);
+    min-width: 300px;
+    max-width: 350px;
+    max-height: 150px;
+    overflow: auto;
+    line-height: 1.5;
+    text-indent: 50px;
+    white-space: wrap;
+    word-break: break-all;
+}
+
+.arabic {
+    direction: rtl;
+    text-align: center;
+    color: rgb(252, 148, 58);
+    padding: 10px;
+    margin: 10px;
+    background-color: cornflowerblue;
+}
+
+.text-edit {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: red;
+    background-color: blanchedalmond;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-overflow: ellipsis;
+}
+
+.container {
+    width: 800px;
+}
+
+.container p {
+    float: left;
+    width: 181.25px;
+    background-color: rgb(173, 168, 168);
+    margin: 0 7.5px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Pseudo classes */
+
+form .input-1:checked + label{
+    color: rgb(252, 148, 58);
+}
+
+/* Pseudo elements */
+
+.paragraph1::first-line {
+    color: yellow !important; 
+    /* important flag to make override on something */
+    font-weight: bold;
+    --myColor: blue; /* declare a local variable syntax */
+}
+
+:root {
+    --myColor: black; /* declare a global variable syntax */
+}
+
+/* start an animation rule set */
+@keyframes identifier {
+    from {
+    }
+    to {
+    }
+}
+
+@keyframes identifier {
+    0% {
+    }
+    100% {
+    }
+}
+
+/* start a media quirey rule set */
+@media print {
+    .select {
+    }
+}
+
+/*
+       $Some Properties in css language$
+       ---------------------------------
+1- color
+2- font
+3- background
+5- text
+6- padding
+7- margin
+8- border
+9- display
+10- min
+11- max
+12- overflow
+13- vertical
+14- direction
+15- letter
+16- line
+17- word
+18- white
+19- list
+20- position
+21- z-index
+22- float
+23- clear
+24- opacity
+25- cursor
+26- content
+27- counter
+28- box
+29- transition
+30- flex
+31- grid
+32- filter
+33- justify
+34- align
+35- transform
+36- animation
+
+
+         %Some Pseudo Classes%
+         ----------------------
+1- hover
+2- checked
+3- visited
+4- empty
+5- focus
+
+
+         @Some Pseudo Elements@
+         ----------------------
+1- first-line
+2- first-letter
+3- selection
+4- after
+5- before
+6- maker
+
+
+         &Some Methods&
+         --------------
+1- calc()
+2- url()
+3- rgb()
+4- counter()
+5- attr()
+6- minmax()
+7- repeat()
+8- linear-gradient()
+
+
+        !Some Selectors!
+        ----------------
+1- *
+2- element
+3- element element ....
+4- .class
+5- #id
+6- .class .class
+7- .class.class
+8- .class element
+9- element.class
+10- .perant > .child
+11- .parent .child
+12- element + element
+13- element ~ element
+14- [Attribute] , element[attr]
+15- [Attribute = value] , element[attr = val]
+16- element[attr ~= val] , element[attr *= val] , element[attr ^= val]
+17- pseudo elements and classes
+18- :not()
+
+
+*/
