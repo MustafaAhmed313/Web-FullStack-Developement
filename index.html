@@ -1,0 +1,343 @@
+<!DOCTYPE html> <!-- Standard mode of the browser -->
+<html> <!-- Start of webPage Structure -->
+    <!-- This is a single line comment -->
+    <!--
+        This is a multiline comment !
+        in html language.
+    -->
+    <head> <!-- Disappeared items -->
+        <!-- title of the webPage-->
+        <title> 
+            My Project
+        </title>
+
+        <style></style> <!-- CSS code -->
+        <script></script> <!-- JS code -->
+
+        <!-- link files of CSS -->
+        <link rel = "stylesheet" href = "index.html" />
+
+        <!-- Some of meta -->
+        <meta name = "description" content = "This is my own project !" />
+        <meta charset = "UTF-8"/>
+
+    </head>
+
+    <body> <!-- Appeared items -->
+
+        <h1><i>My Project</i></h1>
+        <h1><em>My Project</em></h1>
+        <!--
+        Difference between i tag and em tag:-
+        important texts we should concentrate on it <em>
+        -->
+        
+        <!-- 
+            <h2>My Project</h2>
+            <h3>My Project</h3>
+            <h4>My Project</h4>
+            <h5>My Project</h5>
+            <h6>My Project</h6> 
+        -->
+
+        <p> This is my page to do my <b> assignments </b> of html language </p>
+        <p> This is my page to do my <strong> assignments </strong> of <mark> html </mark> language </p>
+        <p> H <sub> 2 </sub> o </p> <!-- write some subscripts -->
+        <p> 10 <sup> 2 </sup> </p> <!-- write some superscripts -->
+        
+        <!--
+            Difference between atrong tag an b in bold tag:-
+            important texts we should concentrate on it <strong>
+        -->
+
+        <img 
+            src = "804-8049853_med-boukrima-specialist-webmaster-php-e-commerce-web.jpg" 
+            alt = "hi i'm disappeared" 
+            width = "500px" 
+            height="500px" /> 
+        <!-- put an image with the link -->
+
+        <a href = "https://google.com" target = "_blank" title = "go to google"> Link Text </a> <!-- put a link of something -->
+        <div> <!-- Grouping element -->
+            <audio controls> <!-- you can use the src attribute but it may not be provided by the browser -->
+                <source 
+                    src = "Sting - What Could Have Been _ Arcane League of Legends _ Riot Games Music(MP3_320K).mp3" 
+                    type = "audio/mpeg" /> <!-- for many source types -->
+                Massage for user to indicate that his browser doesn't support the Audio tags 
+            </audio> <!-- put an audio file -->
+            <hr/>
+            <video controls width = "400px" height = "200px" poster = "Fading lines.gif"> <!-- you can use the src attribute but it may not be provided by the browser -->
+                <source src = "Comp101_Lect5_Part1.mp4" type = "video/mp4" /> <!-- for many source types -->
+                <track src = "myfile.vtt" kind = "subtitles" srclang = "en" label = "English"/> <!-- add some subtitles -->
+                Massage for user to indicate that his browser doesn't support the Video tags 
+            </video> <!-- put a video file -->
+        </div>
+
+        <hr/> <!-- make a solid line to separate things -->
+
+        <u> <mark> this is my project, welcome! </mark> </u> <!-- under lined keywords and is marked -->
+        <mark> this is my <small> project </small>, welcome! </mark> <!-- decrease the size of the the keyword -->
+        <mark> this is my <del> project </del> , welcome! </mark> <!-- deleted text you can write the old prices -->
+        <mark> this is my project <ins> project1 </ins> , welcome! </mark> <!-- deleted text you can write the old prices -->
+
+        <ul> <!-- an unordered list -->
+            <li>Html</li> <!-- a list item -->
+            <li>Css</li>
+            <li>JavaScript</li>
+        </ul>
+        <ol Type = "i" reversed start = "ii"> <!-- an ordered list -->
+            <li>Python</li> 
+            <li value = "iii">C++</li>
+            <li>Java</li>
+        </ol>
+        <dl> <!-- a description list -->
+            <dt>Kotlin</dt> <!-- The term of list -->
+            <dd>Language of mobile *(&copy;)* <span>android applications</span> for the currently centure</dd> <!-- description of the term of list -->
+            <dt>Dart</dt>
+            <dd>Language of mobile Developement <br/>with flutter crossPlatform<br/>and android and ios</dd>
+        </dl>
+        
+        <hr/>
+
+        <!--
+            Note:-
+            any entity starts with '&' and ends with ';' and between them related expreisson 
+        -->
+
+        <table border = "1"> <!-- make Table -->
+            <caption>Programming Students</caption> <!-- Table Title -->
+            <thead> <!-- Table Head -->
+                <tr> <!-- Table Row -->
+                    <th><mark>First</mark></th>
+                    <th><mark>Last</mark></th>
+                    <th><mark>P_Lang</mark></th>
+                </tr>
+            </thead> 
+            <tbody> <!-- Table Body -->
+                <tr>
+                    <td>Mostafa</td>
+                    <td>Ahmed</td>
+                    <td rowspan = "2">Java</td>
+                </tr>
+                <tr>
+                    <td>Mosry</td>
+                    <td>Elzanaty</td>
+                </tr>
+                <tr>
+                    <td>Abdelrahmen</td>
+                    <td>Sayed</td>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td>Yahia</td>
+                    <td>Mohamed</td>
+                    <td>Python</td>
+                </tr>
+            </tbody>
+            <tfoot> 
+                <tr>
+                    <td>Total</td>
+                    <td colspan = "2">Java, C++, Python</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <hr/>
+
+        <!-- Semantic Elements -->
+        <!-- all of them are used as a div -->
+        <main></main> <!-- main content of the document -->
+        <section></section> <!-- section in a document -->
+        <article></article> <!-- self contained content -->
+        <aside></aside> <!-- side bar of the webpage -->
+        <details></details> <!-- make some details -->
+        <footer></footer> <!-- footer for a document or section -->
+        <figure></figure> <!-- add illustrations, diagrams, photos, code listing, etc -->
+        <header></header> <!-- header of a document or section -->
+        <figcaption></figcaption> <!-- caption for a figure element -->
+        <time></time> <!-- date or time -->
+        <nav></nav> <!-- navigation links -->
+        <summary></summary> <!-- visible heading for a details element -->
+
+        <!-- make a Form -->
+        <form action = "" method = "get"> 
+            <!-- 
+                use method attribute to send data online
+                and action to state the path of the transportation of the data 
+            -->
+            <div>
+                <label>Username</label> <!-- input field identifier -->
+                <input 
+                    type = "text" 
+                    required placeholder = "Username" 
+                    name = "User" 
+                    autofocus/> <!-- input field with text type -->
+                <!--autofocus attribute makes it first field to fill out -->
+            </div>
+            <br/>
+            <div>
+                <label>Password</label>
+                <input 
+                    type = "password" 
+                    required placeholder = "Password" 
+                    name = "Pass" 
+                    minlength = "8" 
+                    maxlength = "14"/> <!-- input field with password type -->
+                <!-- 
+                    using minlength attribute to state the minimum length of characters which the field occupies and
+                    using maxlength attribute to state the maximum length of characters which the field occupies 
+                -->
+            </div>
+            <br/>
+            <div>
+                <label>Email</label>
+                <input 
+                    type = "email" 
+                    required placeholder = "write a valid email" 
+                    value = "username123@example.com" 
+                    name = "mail" 
+                    readonly/> <!-- input field with password type -->
+                <!-- readonly attribute makes it unereasable -->
+            </div>
+            <br/>
+            <input 
+                type = "hidden" 
+                value = "secret_data"/> <!-- secret inputs as the id on the network or the server -->
+            <br/>
+            <div>
+                <Label>Color</Label> <!-- color input -->
+                <input 
+                    type = "color" 
+                    name = "Color" 
+                    disabled/> <!-- disabled attribute makes it unsocialize on network buses -->
+            </div>
+            <br/>
+            <div>
+                <Label>Range</Label> <!-- range input -->
+                <input 
+                    type = "range" 
+                    name = "Range" 
+                    min = "10" 
+                    step = "5" 
+                    max = "100"/>
+            </div>
+            <br/>
+            <div>
+                <Label>Number</Label> <!-- number input -->
+                <input 
+                    type = "number" 
+                    name = "Number" 
+                    min = "10" 
+                    step = "5" 
+                    max = "100"/>
+            </div>
+            <hr/>
+            <div> <!-- radio input -->
+                <h3>Operating Systems</h3>
+                <input type = "radio" name = "os" value = "Windows" checked id = "win"/>
+                <Label for = "win">Windows</Label> <!-- for attribute makes linking with the label and the input field using id attribute -->
+                <br/>
+                <input type = "radio" name = "os" value = "Linux" id = "lin"/>
+                <Label for = "lin">Linux</Label>
+                <br/>
+                <input type = "radio" name = "os" value = "Apple" id = "app"/>
+                <Label for = "app">Apple</Label>
+            </div>
+            <hr/>
+            <div> <!-- checkbox input -->
+                <h3>Programming Languages</h3>
+                <input type = "checkbox" name = "java" value = "Java" id = ".java"/>
+                <Label for = ".java">Java</Label> <!-- for attribute makes linking with the label and the input field using id attribute -->
+                <br/>
+                <input type = "checkbox" name = "python" value = "Python" id = ".py"/>
+                <Label for = ".py">Python</Label>
+                <br/>
+                <input type = "checkbox" name = "c++" value = "C++" id = ".cpp"/>
+                <Label for = ".cpp">C++</Label>
+            </div>
+            <hr/>
+            <div>
+                <h3><label for = "web">Websites</label></h3>
+                <select name = "Websites" id = "web" multiple> <!-- make selection list -->
+                    <br/>
+                    <!-- multiple attribute to make multiple selections -->
+                    <optgroup label = "Courses"> <!-- make department in the selection list -->
+                        <option value = "Coursera">Coursera</option> <!-- make option in a selection list -->
+                        <option value = "Sololearn">Sololearn</option>
+                        <option value = "Udacity" selected>Udacity</option>
+                    </optgroup>
+                    <optgroup label = "Problem Solving">
+                        <option value = "Codeforces">Codeforces</option>
+                        <option value = "HackerRank">HackerRank</option>
+                        <option value = "Vjudge">Vjudge</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label>Upload Profile Avatar: </label> <!-- file input -->
+                <input type = "file" name = "Profile"/>
+            </div>
+            <br/>
+            <div>
+                <label>Search here: </label> <!-- search input -->
+                <input type = "search"/>
+            </div>
+            <br/>
+            <div>
+                <label>Enter The Socials: </label> <!-- url input -->
+                <input type = "url"/>
+            </div>
+            <br/>
+            <div>
+                <label>Enter Your Birthdate: </label> <!-- date input -->
+                <input type = "date"/>
+            </div>
+            <br/>
+            <div>
+                <label>Enter Your Month: </label> <!-- month input -->
+                <input type = "month"/>
+            </div>
+            <br/>
+            <div>
+                <label>Time: </label> <!-- time input -->
+                <input type = "time"/>
+            </div>
+            <hr/>
+            <input list="programming" name="prog"/>
+            <datalist id =  "dl">
+                <option value="Java">
+                <option value="C++">
+                <option value="Python">
+            </datalist>
+            <hr/>
+            <div>
+                <label for = "about">About</label> <!-- textarea input -->
+                <br/>
+                <textarea id = "about" cols = "10" rows = "10" placeholder = "Test Text!"></textarea>
+            </div>
+            <input type = "reset" value = "Clear"/> <!-- reset button to clear form -->
+            <input type = "submit" value = "Send"/> <!-- submit button to send form data -->
+        </form>
+
+        <hr/>
+
+        
+        <pre> <!-- write preformatted text -->
+            <code> <!-- write a programming code as a text -->
+                int i = 10; <!-- java code for example -->
+                System.out.println(i);
+            </code>
+        </pre>
+        
+        <hr/>
+
+        <!-- show a website in your webpage -->
+        <iframe src="https://elzero.org" frameborder="0" width = "700px" height = "400px"></iframe>
+
+        <hr/>
+
+        السلام عليكم و رحمة الله و بركاته
+    
+    </body>
+</html> 
